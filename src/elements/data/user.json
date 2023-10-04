@@ -1,0 +1,13 @@
+[
+    {
+        "email" : "agarcia3@uade.edu.ar",
+        "password" : "123456",
+        "perfil" : "profesor",
+        "cursos" : "ingles",
+        "nickname": "Profesor",
+        "categoria": "profesor"
+        
+    }
+
+    
+]

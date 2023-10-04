@@ -1,0 +1,36 @@
+body {
+    height: 1000px;
+    background-color: #fff1f1;
+ 
+    /* Otros estilos globales aquí */
+  }
+
+  .otherCard{
+    display: "flex";
+    height: 300px;
+  
+  }
+
+  @media (min-width:400px) {
+
+    .card__mainCardTitle{
+      font-size: 20px;
+    }
+
+    .otherCard{
+      flex-direction: column;
+    }
+  
+  }
+
+  @media (min-width:600px){
+    .card__mainCardTitle{
+      font-size: 40px;
+    }
+
+    .otherCard{
+      flex-direction: row;
+    }
+
+
+  }
