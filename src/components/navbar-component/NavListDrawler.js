@@ -17,7 +17,7 @@ export default function NavListDrawler({arrayNavLinks}, setOpen) {
                 arrayNavLinks.map(item => (
                     
                     <ListItem key={item.title}>
-                        <ListItemButton   component={NavLink} to = {isLoggedIn?`/${user[0].nickname}/Account`:item.path} onClick={() => setOpen(false)} sx={{ display:'flex',justifyContent:'start'}}>
+                        <ListItemButton   component={NavLink} to = {isLoggedIn?item.title === ''?'/': `/${user[0].nickname}/Account`:item.path} onClick={() => setOpen(false)} sx={{ display:'flex',justifyContent:'start'}}>
                             
                         {
                                     item.title === '' ? <ListItemIcon sx={{display:'flex', justifyContent:'center'}} >{item.icon}</ListItemIcon> : 

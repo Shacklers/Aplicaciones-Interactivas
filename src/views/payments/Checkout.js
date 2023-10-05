@@ -28,7 +28,7 @@ function Copyright() {
   );
 }
 
-const steps = ['Datos del Alumno', 'Metodos de Pago', 'Revision de Mensaje'];
+const steps = ['Datos del Alumno', 'Metodos de Pago'];
 
 function getStepContent(step) {
   switch (step) {
@@ -36,8 +36,6 @@ function getStepContent(step) {
       return <AddressForm />;
     case 1:
       return <PaymentForm />;
-    case 2:
-      return <Review />;
     default:
       throw new Error('Unknown step');
   }

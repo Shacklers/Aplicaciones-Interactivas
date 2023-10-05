@@ -169,16 +169,17 @@ export default function Navbar({arrayNavLinks}) {
            
             <AppBar  elevation={0} position='static' >
                 <Toolbar className={classes.navbar} >
+               
                     <Box sx={customSxSettings.navBarBoxSX}>
                     <IconButton color='inherit'  size='large' onClick={() => setOpen(true)}> <MenuIcon/> </IconButton>
                     </Box>    
                
                     <Box sx={customSxSettings.navBarBoxSM}  >
                         <Box sx={{display:'flex', width: '100%',height:'80%', alignItems:'center', gap:{sm:'3%'}}}>
-                            <Typography className={classes.logo} variant='h4' component={NavLink} to={'/'} fontSize={'2vw'} fontFamily={'BuenosAires'} width={{lg:'36%', xl:'27%'}}>
+                            
+                        <Typography className={classes.logo} variant='h4' component={NavLink} to={'/'} fontSize={'2vw'} fontFamily={'BuenosAires'} width={{lg:'36%', xl:'27%'}}>
                                 Masterprof
-                            </Typography>
-                           
+                            </Typography>   
                                 
                             <Box sx={customSxSettings.underBox} >   
                                 <Box sx={customSxSettings.underBoxTextField}>
@@ -198,7 +199,7 @@ export default function Navbar({arrayNavLinks}) {
 
                         <Box className={classes.NavbarSecondBox}>
                         {   
-                            arrayNavLinks.map(item => ( <Button component = {NavLink} className = {classes.NavbarButton} sx = {customSxSettings.buttonNav} key = {item.title} to = {isLoggedIn?`/${user[0].nickname}/Account`:item.path}  >                      
+                            arrayNavLinks.map(item => ( <Button component = {NavLink} className = {classes.NavbarButton} sx = {customSxSettings.buttonNav} key = {item.title} to = {isLoggedIn?item.title === ''?'/': `/${user[0].nickname}/Account`:item.path}  >                      
                                 {
                                     item.title === '' ? <ListItemIcon sx={{display:'flex', justifyContent:'center'}} >{item.icon}</ListItemIcon> : 
                                     
@@ -216,13 +217,17 @@ export default function Navbar({arrayNavLinks}) {
                         </Box>
                         
                     </Box>
+                    <Typography className={classes.logo} display={{sm:'none'}} variant='h4' component={NavLink} to={'/'} fontSize={'6vw'} fontFamily={'BuenosAires'} width={{lg:'36%', xl:'27%'}}>
+                                Masterprof
+                            </Typography>   
                 </Toolbar>
-            
+                   
             </AppBar>
                         
-
-        
+            
+                        
             <Drawer open={open} anchor="left" onClose= {() => setOpen(false) } sx={{display:{sg:'none'}}}>
+                
                   <NavListDrawler arrayNavLinks={arrayNavLinks} setOpen={setOpen}/>
             </Drawer>
 
