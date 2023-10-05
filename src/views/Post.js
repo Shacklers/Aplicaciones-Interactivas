@@ -1,19 +1,15 @@
-import { List } from '@material-ui/core';
-import { ListItem, ListItemText, makeStyles } from '@material-ui/core';
+import { List, ListItem, ListItemText, makeStyles } from '@material-ui/core';
+import Card from '@mui/joy/Card';
 import { Box, CardMedia, Grid } from '@mui/material';
 import React from 'react';
-import Card from '@mui/joy/Card';
 
-import AspectRatio from '@mui/joy/AspectRatio';
 import Button from '@mui/joy/Button';
-import {useParams, useNavigate } from 'react-router-dom';
 import CardContent from '@mui/joy/CardContent';
-import IconButton from '@mui/joy/IconButton';
 import Typography from '@mui/joy/Typography';
-import BookmarkAdd from '@mui/icons-material/BookmarkAddOutlined';
+import { useNavigate, useParams } from 'react-router-dom';
+import "../elements/fonts/BuenosAires-Black/BuenosAiresBlackFont.css";
 import "../elements/fonts/BuenosAires-Regular/BuenosAiresRegularFont.css";
 import "../elements/fonts/BuenosAires-SemiBold/BuenosAiresFont.css";
-import "../elements/fonts/BuenosAires-Black/BuenosAiresBlackFont.css";
 import "../elements/fonts/BuenosAires-Thin/BuenosAiresThinFont.css";
 const useStyles = makeStyles((theme) => ({
     fisrtList: {

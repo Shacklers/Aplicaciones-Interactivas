@@ -1,26 +1,22 @@
-import React, { useState } from "react";
 import {
-  TextField,
+  Box,
   Button,
-  Container,
-  Typography,
-  Grid,
-  Input,
   CardMedia,
-  Paper,
+  Grid,
+  TextField,
+  Typography
 } from "@mui/material";
-import { makeStyles } from "@mui/styles";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardActions from "@mui/material/CardActions";
-import { Box } from "@mui/material";
 import { useTheme } from '@mui/material/styles';
+import { makeStyles } from "@mui/styles";
+import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
+import '../css/index.css';
+import "../elements/fonts/BuenosAires-Black/BuenosAiresBlackFont.css";
 import "../elements/fonts/BuenosAires-Regular/BuenosAiresRegularFont.css";
 import "../elements/fonts/BuenosAires-SemiBold/BuenosAiresFont.css";
-import "../elements/fonts/BuenosAires-Black/BuenosAiresBlackFont.css";
 import "../elements/fonts/BuenosAires-Thin/BuenosAiresThinFont.css";
-import '../css/index.css'
-import { useNavigate } from 'react-router-dom';
 
 const useStyles = makeStyles({
   home: {

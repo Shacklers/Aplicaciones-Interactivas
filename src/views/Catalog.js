@@ -1,13 +1,12 @@
 
-import React, { useState, useEffect } from 'react';
-import { Box, Button,  Dialog, DialogTitle, Grid, Typography,DialogActions, DialogContent, Checkbox, List, ListItem, ListItemText, Drawer, DialogContentText, CardContent, IconButton  } from '@mui/material';
-import {makeStyles} from '@mui/styles'
-import Card from '@mui/joy/Card';
 import BookmarkAdd from '@mui/icons-material/BookmarkAddOutlined';
 import AspectRatio from '@mui/joy/AspectRatio';
-import { json, useParams } from 'react-router-dom';
+import Card from '@mui/joy/Card';
+import { Box, Button, CardContent, Checkbox, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Grid, IconButton, Typography } from '@mui/material';
+import { makeStyles } from '@mui/styles';
+import React, { useState } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 import jsonData from '../elements/data/post.json';
-import { useNavigate } from 'react-router-dom';
 
 
 

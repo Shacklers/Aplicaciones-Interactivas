@@ -1,17 +1,15 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import '@fortawesome/fontawesome-free/css/all.css';
+import { faFacebook, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
+import { Box } from '@mui/material';
+import Divider from '@mui/material/Divider';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
-import Grid from '@mui/material/Grid'
-import { Box, Button} from '@mui/material';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Divider from '@mui/material/Divider';
 import '../elements/fonts/BuenosAires-Regular/BuenosAiresRegularFont.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import '@fortawesome/fontawesome-free/css/all.css'; 
-import { faFacebook, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
  
 
 const useStyles = makeStyles((theme) => ({
@@ -59,7 +57,7 @@ const Footer = () => {
                         {item}
                     </ListItem>
                     :
-                    <ListItem component={NavLink} to={'#'} sx={sxSettingList.itemBox}   key={index}>
+                    <ListItem component={NavLink} to={'#'} sx={sxSettingList.itemBox}   key={index+1}>
                      {item}
                     </ListItem>
             ))}
@@ -72,7 +70,7 @@ const Footer = () => {
                      {item}
                  </ListItem>
                  :
-                 <ListItem component={NavLink} to={'#'}  sx={sxSettingList.itemBox}   key={index}>
+                 <ListItem component={NavLink} to={'#'}  sx={sxSettingList.itemBox}   key={index+1}>
                   {item}
                  </ListItem>
             ))}
@@ -84,7 +82,7 @@ const Footer = () => {
                     {item}
                 </ListItem>
                 :
-                <ListItem component={NavLink} to={'#'}  sx={sxSettingList.itemBox}  key={index}>
+                <ListItem component={NavLink} to={'#'}  sx={sxSettingList.itemBox}  key={index+1}>
                  {item}
                 </ListItem>
             ))}
@@ -96,11 +94,11 @@ const Footer = () => {
                     {item}
                 </ListItem>
                 :
-                <ListItem component={NavLink} to={'#'}  sx={sxSettingList.itemBox}  key={index}>
+                <ListItem component={NavLink} to={'#'}  sx={sxSettingList.itemBox}  key={index+1}>
                     <Box sx={{display:'flex',gap:'5px'}}>
                         {item.map((icon,index)=>(
                          
-                           <FontAwesomeIcon icon={icon} size='xl'  style={{color: "#a2aab9",}} />
+                           <FontAwesomeIcon icon={icon} size='xl'  style={{color: "#a2aab9",}} key={index} />
                         ))
 
                         }
