@@ -156,7 +156,7 @@ function Catalog() {
             <Button
               sx={{
                 border: "1px solid grey",
-                width: { xs: "40%", md: "20%" ,l:'10%' },
+                width: { xs: "40%", md: "20%" ,xl:'10%' },
                 borderRadius: "10px",
                 fontSize: { xs: "12px", md: "12px", l:'15px'}
               }}
