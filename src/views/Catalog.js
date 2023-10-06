@@ -156,11 +156,12 @@ function Catalog() {
             <Button
               sx={{
                 border: "1px solid grey",
-                width: { xs: "40%", md: "10%" },
+                width: { xs: "40%", md: "20%" ,l:'10%' },
                 borderRadius: "10px",
+                fontSize: { xs: "12px", md: "12px", l:'15px'}
               }}
-              style={{ fontSize: { xs: "11px", md: "15px" } }}
-              onClick={() => handleOpen(item.button)}
+              style={{  }}
+             
               key={index}
             >
               {item.button}

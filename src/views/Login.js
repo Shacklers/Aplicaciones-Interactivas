@@ -103,9 +103,10 @@ export default function Login() {
                 required
                 fullWidth
                 id="email"
-                label="Email Address"
+               // label="Email Address"
                 name="email"
                 autoComplete="email"
+                value = 'juan@gmail.com'
                 autoFocus
               />
               <TextField
@@ -113,7 +114,7 @@ export default function Login() {
                 required
                 fullWidth
                 name="password"
-                label="Password"
+               // label="Password"
                 type="password"
                 id="password"
                 autoComplete="current-password"
