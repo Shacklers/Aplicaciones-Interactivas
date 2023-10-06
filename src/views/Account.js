@@ -85,7 +85,7 @@ const clasesData = [
     frecuencia: "Semanal",
   },
 ];
-
+/*VISTA PANEL PROFESOR*/ 
 const LayoutProfesor = (props) => {
   const [selectedButton, setSelectedButton] = useState("Confirmada");
 
@@ -343,7 +343,7 @@ const LayoutProfesor = (props) => {
     </Grid>
   );
 };
-
+/*VISTA PANEL ALUMNO*/ 
 const LayoutAlumno = () => {
   return (
     <Grid container spacing={0} justifyContent={"center"}>
@@ -417,12 +417,12 @@ const LayoutAlumno = () => {
 const initialUserData = {
   Nombre: "Juan",
   Apellido: "Lopez",
-  Email: "juan.lopez@gmail.com",
+  Email: "juan@gmail.com",
   Contraseña: "********",
   Ubicacion: "Argentina",
   Telefono: "123456789",
 };
-
+/*VISTA PANEL MI CUENTA*/ 
 const LayoutMiCuenta = () => {
   const [isEditing, setIsEditing] = useState(false);
   const [editedUserData, setEditedUserData] = useState({});
